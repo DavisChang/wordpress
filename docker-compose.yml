@@ -1,19 +1,20 @@
 web:
     image: wordpress-base-img
     volumes:
-     - ./data:/data
-#     - ./wordpress/:/var/www/html
+      - ./wordpress/:/var/www/html
     links:
-     - mysql
+        - mysql
     environment:
-     - WORDPRESS_DB_PASSWORD=password
+        - WORDPRESS_DB_PASSWORD=password
     ports:
-     - "8000:80"
+        - "8000:80"
 mysql:
     image: mysql:5.7
+    volumes:
+        - ./mysqldata:/var/lib/mysql
     environment:
-     - MYSQL_ROOT_PASSWORD=password
-     - MYSQL_DATABASE=wordpress
+         - MYSQL_ROOT_PASSWORD=password
+         - MYSQL_DATABASE=wordpress
 
 phpmyadmin:
     image: corbinu/docker-phpmyadmin
