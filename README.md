@@ -1,0 +1,1 @@
+http://MACHINE_VM_IP:8000
