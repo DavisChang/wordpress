@@ -1,5 +1,5 @@
 web:
-    image: wordpress-base-img
+    image: davischang/wordpress
     volumes:
       - ./wordpress/:/var/www/html
     links:
