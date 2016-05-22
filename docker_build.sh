@@ -16,13 +16,13 @@ docker login -u "$DOCKER_REGISTRY_USER" -p "$DOCKER_REGISTRY_PASSWORD" -e "$DOCK
 # base image
 docker build \
   -t "$DOCKER_REPO_NAME:$TAG" \
-  --build-arg GIT_URL="$GIT_URL" \
-  --build-arg GIT_BRANCH="$GIT_BRANCH" \
-  --build-arg GIT_COMMIT="$GIT_COMMIT" \
-  --build-arg BUILD_NUMBER="$BUILD_NUMBER" \
-  --build-arg BUILD_URL="$BUILD_URL" \
-  --build-arg BUILD_USER="$BUILD_USER" \
-  --build-arg BUILD_TIME="$DATE" \
+  # --build-arg GIT_URL="$GIT_URL" \
+  # --build-arg GIT_BRANCH="$GIT_BRANCH" \
+  # --build-arg GIT_COMMIT="$GIT_COMMIT" \
+  # --build-arg BUILD_NUMBER="$BUILD_NUMBER" \
+  # --build-arg BUILD_URL="$BUILD_URL" \
+  # --build-arg BUILD_USER="$BUILD_USER" \
+  # --build-arg BUILD_TIME="$DATE" \
   .
 
 
