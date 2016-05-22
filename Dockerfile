@@ -1,4 +1,8 @@
 FROM  wordpress:4.5.2-apache
 
-RUN apt-get -y update && apt-get install -y vim
+MAINTAINER davis <davis.chang@gmail.com>
+
+RUN apt-get -y update \
+  && apt-get install -y vim \
+  && apt-get -y upgrade \
 
