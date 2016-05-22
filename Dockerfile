@@ -7,4 +7,7 @@ RUN apt-get -y update \
   && apt-get -y upgrade \
 
 
+LABEL component=wordpress \
+      git_url=$GIT_URL \
+
 
