@@ -4,7 +4,7 @@ MAINTAINER davis <davis.chang@gmail.com>
 
 RUN apt-get -y update \
   && apt-get install -y vim \
-  && apt-get -y upgrade \
+  && apt-get -y upgrade
 
 ARG GIT_URL=snapshot
 
