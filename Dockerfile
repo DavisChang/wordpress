@@ -6,8 +6,6 @@ RUN apt-get -y update \
   && apt-get install -y vim \
   && apt-get -y upgrade \
 
-
-LABEL component=wordpress \
-      git_url=$GIT_URL \
+ARG GIT_URL=snapshot
 
 
