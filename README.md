@@ -14,6 +14,6 @@ http://MACHINE_VM_IP:8000
 __phpmyadmin__
 http://MACHINE_VM_IP:8001
 
-#jenkins
+# jenkins
 __AWS__
 http://10.23.127.87:27017/
