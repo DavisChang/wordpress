@@ -1,7 +1,7 @@
 web:
-    image: davischang/wordpress
-    volumes:
-      - ./wordpress/:/var/www/html
+    image: davischang/wordpress:24-90887bbd5ab4505425d93fe66f8b4c36840a83de
+    # volumes:
+    #   - ./wordpress/:/var/www/html
     links:
         - mysql
     environment:
@@ -10,8 +10,8 @@ web:
         - "80:80"
 mysql:
     image: mysql:5.7
-    volumes:
-        - ./mysqldata:/var/lib/mysql
+    # volumes:
+    #     - ./mysqldata:/var/lib/mysql
     environment:
          - MYSQL_ROOT_PASSWORD=password
          - MYSQL_DATABASE=wordpress
