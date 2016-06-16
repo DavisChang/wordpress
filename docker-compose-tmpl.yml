@@ -7,7 +7,7 @@ web:
     environment:
         - WORDPRESS_DB_PASSWORD=password
     ports:
-        - 80:80
+        - 50000:80
 mysql:
     image: mysql:5.7
     volumes:
@@ -21,7 +21,7 @@ phpmyadmin:
     links:
         - mysql:mysql
     ports:
-        - 28017:80
+        - 50001:80
     environment:
         MYSQL_USERNAME: root
         MYSQL_ROOT_PASSWORD: password
